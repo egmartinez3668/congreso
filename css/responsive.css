@@ -1,0 +1,247 @@
+/* ===== TABLET & SMALL DESKTOP (Max 992px) ===== */
+@media screen and (max-width: 992px) {
+    .hero {
+        padding-bottom: 50px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-text {
+        padding-bottom: 0;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .countdown {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content .section-desc {
+        text-align: center;
+    }
+
+    .about-feature {
+        text-align: left;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app-download-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .app-content .section-desc {
+        text-align: center;
+    }
+
+    .app-buttons {
+        justify-content: center;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-widgets {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    /* Mobile Nav */
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: var(--transition);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link {
+        color: var(--text-dark);
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .open-hours {
+        display: none;
+    }
+}
+
+/* ===== MOBILE (Max 768px) ===== */
+@media screen and (max-width: 768px) {
+    .header-top {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .speaker-img {
+        max-height: 420px;
+    }
+
+    .hero-image::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .countdown {
+        gap: 10px;
+    }
+
+    .countdown-item {
+        width: 78px;
+        height: 82px;
+        border-radius: 8px 38px 8px 38px;
+        padding: 8px 4px;
+    }
+
+    .countdown-number {
+        font-size: 1.8rem;
+        margin-bottom: 2px;
+    }
+
+    .countdown-label {
+        font-size: 0.78rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .tabs-nav {
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        min-width: calc(50% - 10px);
+        padding: 15px;
+    }
+
+    .schedule-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .newsletter-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-widgets {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* ===== SMALL MOBILE (Max 480px) ===== */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .countdown-separator {
+        display: none;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .countdown-item {
+        width: calc(50% - 8px);
+        max-width: 120px;
+        height: 85px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .app-buttons {
+        flex-direction: column;
+    }
+
+    .app-btn {
+        justify-content: center;
+    }
+}
